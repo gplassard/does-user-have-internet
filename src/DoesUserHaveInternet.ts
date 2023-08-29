@@ -57,8 +57,8 @@ export class DoesUserHaveInternet extends TerraformStack {
           scope: 'perso',
           env: 'prod',
           team: teamParam.value,
-        }
-      })
+        },
+      });
     }
 
   }
