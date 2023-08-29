@@ -21,11 +21,16 @@
     "projen": "npx projen"
   },
   "devDependencies": {
+    "@cdktf/provider-aws": "17.0.1",
+    "@cdktf/provider-datadog": "9.0.0",
     "@gplassard/projen-extensions": "^0.0.51",
     "@types/jest": "^29.5.4",
     "@types/node": "^16",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
+    "cdktf": "0.18.0",
+    "cdktf-cli": "^0.18.0",
+    "constructs": "10.2.70",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.9",
     "eslint-import-resolver-typescript": "^3.6.0",
@@ -37,6 +42,12 @@
     "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "@cdktf/provider-aws": "^17.0.1",
+    "@cdktf/provider-datadog": "^9.0.0",
+    "cdktf": "^0.18.0",
+    "constructs": "^10.2.70"
   },
   "main": "lib/index.js",
   "license": "Apache-2.0",
