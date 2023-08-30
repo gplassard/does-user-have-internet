@@ -5,6 +5,7 @@ import { Tags, toDatadogTags } from '../utils/tags';
 
 export interface InternetAccessMonitorProps {
   ip: string;
+  port: number;
   name: string;
   slackWorkspace: string;
   tags: Tags;
@@ -18,16 +19,15 @@ export class InternetAccessMonitor extends Construct {
     const syntheticsTest = new SyntheticsTest(this, 'monitor', {
       name: `Internet access for ${props.name}`,
       type: 'api',
-      subtype: 'icmp',
-      locations: ['aws:eu-west-1', 'aws:ap-northeast-1', 'aws:us-east-1'],
+      subtype: 'tcp',
+      locations: ['aws:eu-west-3', 'aws:ap-northeast-1', 'aws:us-east-1'],
       status: 'live',
       requestDefinition: {
         host: props.ip,
-        numberOfPackets: 5,
-        shouldTrackHops: true,
+        port: props.port,
       },
       assertion: [
-        { type: 'packetLossPercentage', operator: 'is', target: '0' },
+        { type: 'connection', operator: 'is', target: 'refused' },
       ],
       tags: toDatadogTags(props.tags),
       message: `
