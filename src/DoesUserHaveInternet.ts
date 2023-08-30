@@ -1,7 +1,7 @@
 import { DataAwsSsmParameter } from '@cdktf/provider-aws/lib/data-aws-ssm-parameter';
 import { AwsProvider } from '@cdktf/provider-aws/lib/provider';
 import { DatadogProvider } from '@cdktf/provider-datadog/lib/provider';
-import { S3Backend, TerraformStack } from 'cdktf';
+import { Fn, S3Backend, TerraformStack } from 'cdktf';
 import { Construct } from 'constructs';
 import { InternetAccessMonitor } from './monitors/InternetAccessMonitor';
 
@@ -35,10 +35,13 @@ export class DoesUserHaveInternet extends TerraformStack {
     });
 
     // TODO make foreach work
-    const usersIndex = Array.from(Array(2).keys()).map(i => i + 1);
+    const usersIndex = Array.from(Array(4).keys()).map(i => i + 1);
     for (const userIndex of usersIndex) {
       const userIp = new DataAwsSsmParameter(this, `user${userIndex}Ip`, {
         name: `/app/does-user-have-internet/user${userIndex}-ip`,
+      });
+      const userPort = new DataAwsSsmParameter(this, `user${userIndex}Port`, {
+        name: `/app/does-user-have-internet/user${userIndex}-port`,
       });
       const userProvider = new DataAwsSsmParameter(this, `user${userIndex}Provider`, {
         name: `/app/does-user-have-internet/user${userIndex}-provider`,
@@ -51,6 +54,7 @@ export class DoesUserHaveInternet extends TerraformStack {
         name: userName.value,
         slackWorkspace: slackWorkspaceParam.value,
         ip: userIp.value,
+        port: Fn.tonumber(userPort.value),
         tags: {
           provider: userProvider.value,
           server: 'box',
