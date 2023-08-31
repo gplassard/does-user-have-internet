@@ -62,7 +62,7 @@ export class DoesUserHaveInternet extends TerraformStack {
           app: 'doesuserhaveinternet',
           env: 'prod',
           team: teamParam.value,
-          repo: 'gplassard/does-user-have-internet'
+          repo: 'gplassard/does-user-have-internet',
         },
       });
     }
