@@ -56,13 +56,14 @@ export class DoesUserHaveInternet extends TerraformStack {
         ip: userIp.value,
         port: Fn.tonumber(userPort.value),
         tags: {
-          provider: userProvider.value,
-          server: 'box',
-          scope: 'perso',
-          app: 'doesuserhaveinternet',
-          env: 'prod',
-          team: teamParam.value,
-          repo: 'gplassard/does-user-have-internet',
+          'provider': userProvider.value,
+          'server': 'box',
+          'scope': 'perso',
+          'app': 'doesuserhaveinternet',
+          'env': 'prod',
+          'team': teamParam.value,
+          'repo': 'gplassard/does-user-have-internet',
+          'x-user': `user-${userIndex}`,
         },
       });
     }
