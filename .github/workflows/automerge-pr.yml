@@ -1,0 +1,15 @@
+name: Automerge
+on:
+  workflow_dispatch:
+    inputs:
+      pr:
+        type: number
+        required: true
+        description: Id of the pr
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - run: gh pr merge ${{ github.event.inputs.pr }} --auto --squash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
