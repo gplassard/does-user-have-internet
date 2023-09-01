@@ -6,6 +6,7 @@ import { Tags, toDatadogTags } from '../utils/tags';
 export interface InternetAccessMonitorProps {
   ip: string;
   port: number;
+  expectedResult: string;
   name: string;
   slackWorkspace: string;
   tags: Tags;
@@ -27,13 +28,14 @@ export class InternetAccessMonitor extends Construct {
         port: props.port,
       },
       assertion: [
-        { type: 'connection', operator: 'is', target: 'refused' },
+        { type: 'connection', operator: 'is', target: props.expectedResult },
       ],
       tags: toDatadogTags(props.tags),
       message: `
 {{#is_alert}} 🚨🔥 ${props.name} doesn't have internet anymore ! 🔥🚨{{/is_alert}}
 {{^is_alert}} ✅👌 ${props.name} has internet again ! 👌 ✅ {{/is_alert}}
 @slack-${props.slackWorkspace}-datadog-${props.tags.scope}-${props.tags.env}
+@workflow-DoesUserHaveInternet-Monitor
             `,
       optionsList: {
         tickEvery: 600,

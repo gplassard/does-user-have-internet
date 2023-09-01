@@ -43,6 +43,9 @@ export class DoesUserHaveInternet extends TerraformStack {
       const userPort = new DataAwsSsmParameter(this, `user${userIndex}Port`, {
         name: `/app/does-user-have-internet/user${userIndex}-port`,
       });
+      const userExpected = new DataAwsSsmParameter(this, `user${userIndex}Expected`, {
+        name: `/app/does-user-have-internet/user${userIndex}-expected`,
+      });
       const userProvider = new DataAwsSsmParameter(this, `user${userIndex}Provider`, {
         name: `/app/does-user-have-internet/user${userIndex}-provider`,
       });
@@ -55,6 +58,7 @@ export class DoesUserHaveInternet extends TerraformStack {
         slackWorkspace: slackWorkspaceParam.value,
         ip: userIp.value,
         port: Fn.tonumber(userPort.value),
+        expectedResult: userExpected.value,
         tags: {
           'provider': userProvider.value,
           'server': 'box',
