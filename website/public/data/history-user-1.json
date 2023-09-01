@@ -131,6 +131,12 @@
       "state": "OK",
       "trigger": "manual",
       "date": "2023-09-01T18:14:38.768Z"
+    },
+    {
+      "date": "2023-09-01T22:15:35.773Z",
+      "since": "2023-09-01T22:15:34+00:00",
+      "state": "Alert",
+      "trigger": "monitor"
     }
   ]
 }
