@@ -137,6 +137,12 @@
       "since": "2023-09-01T22:15:34+00:00",
       "state": "Alert",
       "trigger": "monitor"
+    },
+    {
+      "date": "2023-09-02T00:30:14.310Z",
+      "since": "2023-09-01T22:15:34+00:00",
+      "state": "Alert",
+      "trigger": "scheduled"
     }
   ]
 }

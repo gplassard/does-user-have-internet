@@ -137,6 +137,12 @@
       "state": "OK",
       "trigger": "monitor",
       "date": "2023-09-01T22:15:35.773Z"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2023-09-02T00:30:14.310Z",
+      "since": "2023-08-30T18:32:04+00:00",
+      "state": "OK"
     }
   ]
 }
