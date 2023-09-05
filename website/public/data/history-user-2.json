@@ -161,6 +161,12 @@
       "since": "2023-08-31T17:18:04+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2023-09-05T00:30:14.483Z",
+      "since": "2023-08-31T17:18:04+00:00",
+      "state": "OK"
     }
   ]
 }
