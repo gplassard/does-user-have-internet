@@ -1,7 +1,7 @@
 import { ServiceLevelObjective } from '@cdktf/provider-datadog/lib/service-level-objective';
 import { SyntheticsTest } from '@cdktf/provider-datadog/lib/synthetics-test';
 import { Construct } from 'constructs';
-import { Tags, toDatadogTags } from '../utils/tags';
+import { DatadogTags, toDatadogTags } from '@gplassard/cdktf-extensions';
 
 export interface InternetAccessMonitorProps {
   ip: string;
@@ -9,7 +9,7 @@ export interface InternetAccessMonitorProps {
   expectedResult: string;
   name: string;
   slackWorkspace: string;
-  tags: Tags;
+  tags: DatadogTags & {provider: string; server: string};
 }
 
 export class InternetAccessMonitor extends Construct {

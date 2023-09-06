@@ -65,6 +65,7 @@ export class DoesUserHaveInternet extends TerraformStack {
           'scope': 'perso',
           'app': 'doesuserhaveinternet',
           'env': 'prod',
+          'infraAsCode': 'cdktf',
           'team': teamParam.value,
           'repo': 'gplassard/does-user-have-internet',
           'x-user': `user-${userIndex}`,

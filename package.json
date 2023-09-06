@@ -23,6 +23,7 @@
   "devDependencies": {
     "@cdktf/provider-aws": "17.0.1",
     "@cdktf/provider-datadog": "9.0.0",
+    "@gplassard/cdktf-extensions": "^0.0.1",
     "@gplassard/projen-extensions": "^0.0.53",
     "@types/jest": "^29.5.4",
     "@types/node": "^16",
@@ -42,12 +43,6 @@
     "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
-  },
-  "peerDependencies": {
-    "@cdktf/provider-aws": "^17.0.1",
-    "@cdktf/provider-datadog": "^9.0.0",
-    "cdktf": "^0.18.0",
-    "constructs": "^10.2.70"
   },
   "main": "lib/index.js",
   "license": "Apache-2.0",

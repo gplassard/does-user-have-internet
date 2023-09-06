@@ -135,10 +135,10 @@
       "description": "Creates the distribution package",
       "steps": [
         {
-          "exec": "mkdir -p dist/js"
+          "exec": "mkdir -p dist\\js"
         },
         {
-          "exec": "mv $(npm pack) dist/js/"
+          "exec": "mv $(npm pack) dist\\js/"
         }
       ]
     },
@@ -227,13 +227,13 @@
           "exec": "yarn upgrade npm-check-updates"
         },
         {
-          "exec": "npm-check-updates --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@cdktf/provider-aws,@cdktf/provider-datadog,@gplassard/projen-extensions,@types/jest,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,cdktf,cdktf-cli,constructs,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint-plugin-import,eslint,jest,jest-junit,npm-check-updates,standard-version,ts-jest,ts-node,typescript"
+          "exec": "npm-check-updates --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@cdktf/provider-aws,@cdktf/provider-datadog,@gplassard/cdktf-extensions,@gplassard/projen-extensions,@types/jest,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,cdktf,cdktf-cli,constructs,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint-plugin-import,eslint,jest,jest-junit,npm-check-updates,standard-version,ts-jest,ts-node,typescript"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @cdktf/provider-aws @cdktf/provider-datadog @gplassard/projen-extensions @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser cdktf cdktf-cli constructs eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit npm-check-updates standard-version ts-jest ts-node typescript"
+          "exec": "yarn upgrade @cdktf/provider-aws @cdktf/provider-datadog @gplassard/cdktf-extensions @gplassard/projen-extensions @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser cdktf cdktf-cli constructs eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit npm-check-updates standard-version ts-jest ts-node typescript"
         },
         {
           "exec": "npx projen"
