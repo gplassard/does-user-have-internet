@@ -44,6 +44,14 @@
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },
+  "peerDependencies": {
+    "@cdktf/provider-aws": "^17.0.1",
+    "@cdktf/provider-datadog": "^9.0.0",
+    "@gplassard/cdktf-extensions": "^0.0.1",
+    "cdktf": "^0.18.0",
+    "cdktf-cli": "^0.18.0",
+    "constructs": "^10.2.70"
+  },
   "main": "lib/index.js",
   "license": "Apache-2.0",
   "version": "0.0.0",
