@@ -1,7 +1,7 @@
 import { ServiceLevelObjective } from '@cdktf/provider-datadog/lib/service-level-objective';
 import { SyntheticsTest } from '@cdktf/provider-datadog/lib/synthetics-test';
-import { Construct } from 'constructs';
 import { DatadogTags, toDatadogTags } from '@gplassard/cdktf-extensions';
+import { Construct } from 'constructs';
 
 export interface InternetAccessMonitorProps {
   ip: string;
