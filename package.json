@@ -23,6 +23,7 @@
   "devDependencies": {
     "@cdktf/provider-aws": "17.0.1",
     "@cdktf/provider-datadog": "9.0.0",
+    "@gplassard/cdktf-extensions": "^0.0.1",
     "@gplassard/projen-extensions": "^0.0.53",
     "@types/jest": "^29.5.4",
     "@types/node": "^16",
@@ -46,7 +47,9 @@
   "peerDependencies": {
     "@cdktf/provider-aws": "^17.0.1",
     "@cdktf/provider-datadog": "^9.0.0",
+    "@gplassard/cdktf-extensions": "^0.0.1",
     "cdktf": "^0.18.0",
+    "cdktf-cli": "^0.18.0",
     "constructs": "^10.2.70"
   },
   "main": "lib/index.js",

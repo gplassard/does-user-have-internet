@@ -9,6 +9,10 @@
       "type": "build"
     },
     {
+      "name": "@gplassard/cdktf-extensions",
+      "type": "build"
+    },
+    {
       "name": "@gplassard/projen-extensions",
       "type": "build"
     },
@@ -100,7 +104,15 @@
       "type": "peer"
     },
     {
+      "name": "@gplassard/cdktf-extensions",
+      "type": "peer"
+    },
+    {
       "name": "cdktf",
+      "type": "peer"
+    },
+    {
+      "name": "cdktf-cli",
       "type": "peer"
     },
     {
