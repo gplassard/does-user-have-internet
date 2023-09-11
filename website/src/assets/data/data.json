@@ -1,9 +1,9 @@
 {
-  "lastUpdatedAt": "2023-09-11T00:30:12.024Z",
+  "lastUpdatedAt": "2023-09-11T10:15:05.944Z",
   "users": {
     "user-1": {
-      "since": "2023-09-10T02:54:04+00:00",
-      "state": "OK"
+      "state": "Alert",
+      "since": "2023-09-11T10:15:03+00:00"
     },
     "user-2": {
       "since": "2023-08-31T17:18:04+00:00",
@@ -18,5 +18,5 @@
       "state": "OK"
     }
   },
-  "trigger": "scheduled"
+  "trigger": "monitor"
 }
