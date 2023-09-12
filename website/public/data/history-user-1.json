@@ -251,6 +251,12 @@
       "since": "2023-09-11T16:54:03+00:00",
       "state": "OK",
       "trigger": "monitor"
+    },
+    {
+      "state": "Alert",
+      "trigger": "monitor",
+      "date": "2023-09-12T00:15:06.440Z",
+      "since": "2023-09-12T00:15:04+00:00"
     }
   ]
 }
