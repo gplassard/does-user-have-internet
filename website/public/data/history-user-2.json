@@ -323,6 +323,12 @@
       "state": "OK",
       "trigger": "scheduled",
       "date": "2023-09-22T00:30:13.227Z"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2023-09-23T00:30:13.839Z",
+      "since": "2023-08-31T17:18:04+00:00",
+      "state": "OK"
     }
   ]
 }
