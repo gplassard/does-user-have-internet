@@ -20,15 +20,19 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
-      - uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: "18"
-          registry-url: https://npm.pkg.github.com
-          cache: yarn
-      - name: Install dependencies
-        run: yarn install --check-files
+          node-version: 18.18.1
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.18.1
+          registry-url: https://npm.pkg.github.com
+          cache: pnpm
+      - name: Install dependencies
+        run: yarn install --check-files
       - name: build
         run: npx projen build
       - name: Find mutations
