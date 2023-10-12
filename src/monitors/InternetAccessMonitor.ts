@@ -39,6 +39,7 @@ export class InternetAccessMonitor extends Construct {
             `,
       optionsList: {
         tickEvery: 600,
+        minLocationFailed: 2,
       },
     });
 
