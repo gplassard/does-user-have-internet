@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: 18.18.1
           registry-url: https://npm.pkg.github.com
-          cache: pnpm
+          cache: yarn
       - name: Install dependencies
         run: yarn install --check-files
       - name: build

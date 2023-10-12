@@ -24,7 +24,7 @@
     "@cdktf/provider-aws": "17.0.1",
     "@cdktf/provider-datadog": "9.0.0",
     "@gplassard/cdktf-extensions": "^0.0.1",
-    "@gplassard/projen-extensions": "^0.0.59",
+    "@gplassard/projen-extensions": "^0.0.60",
     "@types/jest": "^29.5.4",
     "@types/node": "^16",
     "@typescript-eslint/eslint-plugin": "^6",

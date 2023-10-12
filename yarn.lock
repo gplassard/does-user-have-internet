@@ -480,10 +480,10 @@
   resolved "https://npm.pkg.github.com/download/@gplassard/cdktf-extensions/0.0.1/efbe16af888c01d5b7379e5fb645f68c7b828a16#efbe16af888c01d5b7379e5fb645f68c7b828a16"
   integrity sha512-v8VKKt8TNnIxr5RK6uQNHU/eOy3QK5Pk0s8FJmqMFDF8gXz2g7uvc410KgqbdJ+9eJEIsqYSNdx2Bwb3JhN8qw==
 
-"@gplassard/projen-extensions@^0.0.59":
-  version "0.0.59"
-  resolved "https://npm.pkg.github.com/download/@gplassard/projen-extensions/0.0.59/4327d803e1147958c0f9f113f2fb28377a1342e3#4327d803e1147958c0f9f113f2fb28377a1342e3"
-  integrity sha512-3COpKo6wMOGetf0D5FPdWW3Gs2HdNAEMmaIJG2QvuOcFD4e7X5fZVPKE9MpM3V5zK7FZE8w5gKOCeH6o/ZQUUA==
+"@gplassard/projen-extensions@^0.0.60":
+  version "0.0.60"
+  resolved "https://npm.pkg.github.com/download/@gplassard/projen-extensions/0.0.60/afcbc3ec73605f017886b670f28a1a7c72f03ce6#afcbc3ec73605f017886b670f28a1a7c72f03ce6"
+  integrity sha512-IyVRtPeS5UQhABri6VGgtN5wAoCsPWGQ5ic+0N5iByafPtWJahYEtGEQIWA3Gpe2SVKll+4rh96Eszrqyzd/Gw==
   dependencies:
     projen "^0.73.37"
 
