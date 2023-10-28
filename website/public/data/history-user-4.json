@@ -599,6 +599,12 @@
       "state": "Alert",
       "trigger": "monitor",
       "date": "2023-10-28T06:52:57.351Z"
+    },
+    {
+      "state": "OK",
+      "trigger": "monitor",
+      "date": "2023-10-28T21:41:54.888Z",
+      "since": "2023-10-28T21:41:33+00:00"
     }
   ]
 }
