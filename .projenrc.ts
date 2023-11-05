@@ -8,6 +8,6 @@ const project = new TypescriptApplicationProject({
   devDeps: ['cdktf-cli', 'cdktf', 'constructs', '@cdktf/provider-aws', '@cdktf/provider-datadog', '@gplassard/cdktf-extensions'],
   peerDeps: ['cdktf-cli', 'cdktf', 'constructs', '@cdktf/provider-aws', '@cdktf/provider-datadog', '@gplassard/cdktf-extensions'],
   gitignore: ['*.tfstate*', 'cdktf.out'],
+  nodeVersion: "18.18.1",
 });
-project.tryFindObjectFile('package.json')?.addOverride('volta.node', '18.18.1');
 project.synth();
