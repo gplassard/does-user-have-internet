@@ -14,8 +14,8 @@
       "state": "OK"
     },
     "user-4": {
-      "state": "Alert",
-      "since": "2023-11-25T18:32:33+00:00"
+      "state": "OK",
+      "since": "2023-11-25T18:41:34+00:00"
     }
   },
   "trigger": "monitor"
