@@ -851,6 +851,12 @@
       "state": "Alert",
       "trigger": "monitor",
       "date": "2023-12-02T17:32:44.913Z"
+    },
+    {
+      "trigger": "monitor",
+      "date": "2023-12-02T18:31:57.272Z",
+      "since": "2023-12-02T18:31:34+00:00",
+      "state": "OK"
     }
   ]
 }
