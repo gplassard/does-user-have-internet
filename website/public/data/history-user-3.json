@@ -977,6 +977,12 @@
       "state": "OK",
       "trigger": "scheduled",
       "date": "2023-12-24T01:30:15.665Z"
+    },
+    {
+      "state": "OK",
+      "trigger": "scheduled",
+      "date": "2023-12-25T01:30:15.186Z",
+      "since": "2023-10-12T18:34:32+00:00"
     }
   ]
 }
