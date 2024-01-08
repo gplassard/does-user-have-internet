@@ -1097,6 +1097,12 @@
       "state": "OK",
       "trigger": "scheduled",
       "date": "2024-01-08T01:30:13.468Z"
+    },
+    {
+      "state": "Alert",
+      "trigger": "monitor",
+      "date": "2024-01-08T10:02:54.358Z",
+      "since": "2024-01-08T10:02:33+00:00"
     }
   ]
 }
