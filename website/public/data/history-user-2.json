@@ -1193,6 +1193,12 @@
       "since": "2023-10-12T18:34:34+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "state": "OK",
+      "trigger": "monitor",
+      "date": "2024-01-20T11:21:54.454Z",
+      "since": "2023-10-12T18:34:34+00:00"
     }
   ]
 }
