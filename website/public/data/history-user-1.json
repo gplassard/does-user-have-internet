@@ -1253,6 +1253,12 @@
       "state": "Alert",
       "trigger": "monitor",
       "date": "2024-01-26T09:22:46.484Z"
+    },
+    {
+      "state": "OK",
+      "trigger": "monitor",
+      "date": "2024-01-26T09:31:58.261Z",
+      "since": "2024-01-26T09:31:33+00:00"
     }
   ]
 }
