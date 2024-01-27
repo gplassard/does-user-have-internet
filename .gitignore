@@ -32,7 +32,6 @@ jspm_packages/
 .cache
 *.tfstate*
 cdktf.out
-!/.projenrc.js
 /test-reports/
 junit.xml
 !/jest.config.json
@@ -55,3 +54,4 @@ junit.xml
 *.iml
 .vscode
 .DS_Store
+!/.projenrc.ts
