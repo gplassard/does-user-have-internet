@@ -21,7 +21,7 @@ function App() {
                             <tr>
                                 <td>{username}</td>
                                 <td className={userData.state === 'Alert' ? 'status-ko' : 'status-ok'}>{userData.state === 'Alert' ? '😱 DOWN 😱' : '🥳 UP 🥳'}</td>
-                                <td>{userData.since}</td>
+                                <td>{new Date(userData.since).toLocaleString()}</td>
                             </tr>
                         )
                     })}
