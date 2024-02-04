@@ -1313,6 +1313,12 @@
       "state": "OK",
       "trigger": "scheduled",
       "date": "2024-02-03T01:30:14.624Z"
+    },
+    {
+      "date": "2024-02-04T01:30:14.451Z",
+      "since": "2023-10-12T18:34:34+00:00",
+      "state": "OK",
+      "trigger": "scheduled"
     }
   ]
 }
