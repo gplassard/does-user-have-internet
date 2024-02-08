@@ -1,13 +1,13 @@
 {
-  "lastUpdatedAt": "2024-02-07T01:30:13.558Z",
+  "lastUpdatedAt": "2024-02-08T01:30:14.714Z",
   "users": {
     "user-1": {
-      "state": "Alert",
-      "since": "2024-01-26T15:32:34+00:00"
+      "since": "2024-01-26T15:32:34+00:00",
+      "state": "Alert"
     },
     "user-2": {
-      "state": "OK",
-      "since": "2023-10-12T18:34:34+00:00"
+      "since": "2023-10-12T18:34:34+00:00",
+      "state": "OK"
     },
     "user-3": {
       "state": "OK",
