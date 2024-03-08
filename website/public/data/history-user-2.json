@@ -1553,6 +1553,12 @@
       "since": "2023-10-12T18:34:34+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "date": "2024-03-08T15:45:45.085Z",
+      "since": "2023-10-12T18:34:34+00:00",
+      "state": "OK",
+      "trigger": "monitor"
     }
   ]
 }
