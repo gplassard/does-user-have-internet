@@ -1,5 +1,5 @@
 {
-  "lastUpdatedAt": "2024-03-07T09:54:42.094Z",
+  "lastUpdatedAt": "2024-03-08T01:30:13.157Z",
   "users": {
     "user-1": {
       "state": "OK",
@@ -18,5 +18,5 @@
       "state": "OK"
     }
   },
-  "trigger": "monitor"
+  "trigger": "scheduled"
 }
