@@ -1595,6 +1595,12 @@
       "since": "2024-03-11T01:05:33+00:00",
       "state": "Alert",
       "trigger": "monitor"
+    },
+    {
+      "trigger": "monitor",
+      "date": "2024-03-11T01:14:56.447Z",
+      "since": "2024-03-11T01:14:33+00:00",
+      "state": "OK"
     }
   ]
 }
