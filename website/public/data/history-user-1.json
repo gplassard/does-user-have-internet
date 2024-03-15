@@ -1643,6 +1643,12 @@
       "state": "OK",
       "trigger": "monitor",
       "date": "2024-03-14T10:24:00.302Z"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2024-03-15T01:30:15.036Z",
+      "since": "2024-03-11T01:14:33+00:00",
+      "state": "OK"
     }
   ]
 }
