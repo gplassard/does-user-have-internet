@@ -1667,6 +1667,12 @@
       "since": "2024-03-11T01:14:33+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "state": "OK",
+      "trigger": "scheduled",
+      "date": "2024-03-19T01:30:12.440Z",
+      "since": "2024-03-11T01:14:33+00:00"
     }
   ]
 }
