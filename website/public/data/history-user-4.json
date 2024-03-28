@@ -1751,6 +1751,12 @@
       "state": "Alert",
       "trigger": "scheduled",
       "date": "2024-03-28T01:30:12.216Z"
+    },
+    {
+      "state": "Alert",
+      "trigger": "monitor",
+      "date": "2024-03-28T18:55:55.221Z",
+      "since": "2024-03-14T10:23:32+00:00"
     }
   ]
 }
