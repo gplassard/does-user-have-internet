@@ -1763,6 +1763,12 @@
       "state": "OK",
       "trigger": "scheduled",
       "date": "2024-03-30T01:30:14.723Z"
+    },
+    {
+      "state": "OK",
+      "trigger": "scheduled",
+      "date": "2024-03-31T01:30:14.773Z",
+      "since": "2023-10-12T18:34:32+00:00"
     }
   ]
 }
