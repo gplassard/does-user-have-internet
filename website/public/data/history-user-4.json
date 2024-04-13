@@ -1853,6 +1853,12 @@
       "state": "Alert",
       "trigger": "scheduled",
       "date": "2024-04-12T00:30:13.571Z"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2024-04-13T00:30:13.358Z",
+      "since": "2024-03-14T10:23:32+00:00",
+      "state": "Alert"
     }
   ]
 }
