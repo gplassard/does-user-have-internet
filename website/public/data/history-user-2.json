@@ -1889,6 +1889,12 @@
       "state": "OK",
       "trigger": "monitor",
       "date": "2024-04-16T00:54:56.573Z"
+    },
+    {
+      "since": "2024-03-22T00:27:34+00:00",
+      "state": "OK",
+      "trigger": "scheduled",
+      "date": "2024-04-17T00:30:14.148Z"
     }
   ]
 }
