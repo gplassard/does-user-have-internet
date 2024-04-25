@@ -1937,6 +1937,12 @@
       "since": "2023-10-12T18:34:32+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "since": "2023-10-12T18:34:32+00:00",
+      "state": "OK",
+      "trigger": "scheduled",
+      "date": "2024-04-25T00:30:13.541Z"
     }
   ]
 }
