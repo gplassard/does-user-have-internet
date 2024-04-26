@@ -1949,6 +1949,12 @@
       "state": "Alert",
       "trigger": "monitor",
       "date": "2024-04-26T00:28:16.231Z"
+    },
+    {
+      "since": "2024-04-26T00:28:01+00:00",
+      "state": "Alert",
+      "trigger": "scheduled",
+      "date": "2024-04-26T00:30:13.636Z"
     }
   ]
 }
