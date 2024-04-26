@@ -1955,6 +1955,12 @@
       "state": "Alert",
       "trigger": "scheduled",
       "date": "2024-04-26T00:30:13.636Z"
+    },
+    {
+      "state": "OK",
+      "trigger": "monitor",
+      "date": "2024-04-26T00:48:43.304Z",
+      "since": "2024-04-26T00:48:31+00:00"
     }
   ]
 }
