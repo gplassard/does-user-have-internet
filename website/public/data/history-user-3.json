@@ -1979,6 +1979,12 @@
       "state": "OK",
       "trigger": "scheduled",
       "date": "2024-04-29T00:30:13.876Z"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2024-04-30T00:30:14.056Z",
+      "since": "2024-04-26T00:48:31+00:00",
+      "state": "OK"
     }
   ]
 }
