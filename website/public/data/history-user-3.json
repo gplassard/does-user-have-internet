@@ -1991,6 +1991,12 @@
       "state": "OK",
       "trigger": "scheduled",
       "date": "2024-05-01T00:30:12.310Z"
+    },
+    {
+      "state": "OK",
+      "trigger": "scheduled",
+      "date": "2024-05-02T00:30:12.783Z",
+      "since": "2024-04-26T00:48:31+00:00"
     }
   ]
 }
