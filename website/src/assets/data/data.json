@@ -2,8 +2,8 @@
   "lastUpdatedAt": "2024-05-02T00:30:12.783Z",
   "users": {
     "user-1": {
-      "since": "2024-04-16T00:54:34+00:00",
-      "state": "OK"
+      "state": "OK",
+      "since": "2024-04-16T00:54:34+00:00"
     },
     "user-2": {
       "state": "OK",
