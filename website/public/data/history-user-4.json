@@ -2015,6 +2015,12 @@
       "state": "Alert",
       "trigger": "scheduled",
       "date": "2024-05-03T00:30:14.314Z"
+    },
+    {
+      "since": "2024-03-14T10:23:32+00:00",
+      "state": "Alert",
+      "trigger": "scheduled",
+      "date": "2024-05-04T00:30:13.592Z"
     }
   ]
 }
