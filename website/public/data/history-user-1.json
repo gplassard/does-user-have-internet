@@ -2063,6 +2063,12 @@
       "since": "2024-04-16T00:54:34+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "state": "OK",
+      "trigger": "monitor",
+      "date": "2024-05-11T02:35:46.869Z",
+      "since": "2024-04-16T00:54:34+00:00"
     }
   ]
 }
