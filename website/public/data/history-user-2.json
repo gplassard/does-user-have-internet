@@ -2207,6 +2207,12 @@
       "since": "2024-05-14T17:26:04+00:00",
       "state": "OK",
       "trigger": "monitor"
+    },
+    {
+      "date": "2024-05-31T00:30:15.131Z",
+      "since": "2024-05-14T17:26:04+00:00",
+      "state": "OK",
+      "trigger": "scheduled"
     }
   ]
 }
