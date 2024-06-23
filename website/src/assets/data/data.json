@@ -14,8 +14,8 @@
       "state": "OK"
     },
     "user-4": {
-      "state": "OK",
-      "since": "2024-06-20T17:35:32+00:00"
+      "since": "2024-06-23T05:17:32+00:00",
+      "state": "Alert"
     }
   },
   "trigger": "scheduled"
