@@ -2429,6 +2429,12 @@
       "since": "2024-06-23T05:17:32+00:00",
       "state": "Alert",
       "trigger": "monitor"
+    },
+    {
+      "date": "2024-06-23T05:25:42.307Z",
+      "since": "2024-06-23T05:25:32+00:00",
+      "state": "OK",
+      "trigger": "monitor"
     }
   ]
 }
