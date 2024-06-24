@@ -2423,6 +2423,12 @@
       "since": "2024-06-11T00:47:01+00:00",
       "state": "OK",
       "trigger": "monitor"
+    },
+    {
+      "date": "2024-06-24T00:30:03.950Z",
+      "since": "2024-06-11T00:47:01+00:00",
+      "state": "OK",
+      "trigger": "scheduled"
     }
   ]
 }
