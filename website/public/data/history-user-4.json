@@ -2453,6 +2453,12 @@
       "since": "2024-06-23T05:25:32+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "state": "OK",
+      "trigger": "scheduled",
+      "date": "2024-06-27T00:30:04.301Z",
+      "since": "2024-06-23T05:25:32+00:00"
     }
   ]
 }
