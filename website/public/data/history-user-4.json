@@ -2555,6 +2555,12 @@
       "since": "2024-07-12T14:16:32+00:00",
       "state": "Alert",
       "trigger": "monitor"
+    },
+    {
+      "date": "2024-07-12T14:24:17.580Z",
+      "since": "2024-07-12T14:24:02+00:00",
+      "state": "OK",
+      "trigger": "monitor"
     }
   ]
 }
