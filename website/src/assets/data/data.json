@@ -1,5 +1,5 @@
 {
-  "lastUpdatedAt": "2024-07-23T00:30:06.739Z",
+  "lastUpdatedAt": "2024-07-24T00:30:05.939Z",
   "users": {
     "user-1": {
       "state": "OK",
@@ -14,8 +14,8 @@
       "state": "OK"
     },
     "user-4": {
-      "since": "2024-07-12T14:24:02+00:00",
-      "state": "OK"
+      "state": "OK",
+      "since": "2024-07-12T14:24:02+00:00"
     }
   },
   "trigger": "scheduled"
