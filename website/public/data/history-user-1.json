@@ -2807,6 +2807,12 @@
       "since": "2024-07-18T23:02:03+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2024-08-18T00:30:04.846Z",
+      "since": "2024-07-18T23:02:03+00:00",
+      "state": "OK"
     }
   ]
 }
