@@ -57,7 +57,7 @@ export class DoesUserHaveInternet extends TerraformStack {
         name: userName.value,
         slackWorkspace: slackWorkspaceParam.value,
         ip: userIp.value,
-        port: Fn.tonumber(userPort.value),
+        port: userPort.value,
         expectedResult: userExpected.value,
         tags: {
           'provider': userProvider.value,
