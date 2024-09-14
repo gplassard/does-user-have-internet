@@ -5,7 +5,7 @@ import { Construct } from 'constructs';
 
 export interface InternetAccessMonitorProps {
   ip: string;
-  port: number;
+  port: string;
   expectedResult: string;
   name: string;
   slackWorkspace: string;
