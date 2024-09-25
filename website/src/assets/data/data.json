@@ -1,9 +1,9 @@
 {
-  "lastUpdatedAt": "2024-09-25T00:30:04.957Z",
+  "lastUpdatedAt": "2024-09-25T07:56:49.475Z",
   "users": {
     "user-1": {
-      "state": "Alert",
-      "since": "2024-09-02T12:37:33+00:00"
+      "since": "2024-09-25T07:56:33+00:00",
+      "state": "OK"
     },
     "user-2": {
       "since": "2024-08-28T18:23:35+00:00",
@@ -14,9 +14,9 @@
       "state": "OK"
     },
     "user-4": {
-      "since": "2024-09-08T14:35:32+00:00",
-      "state": "OK"
+      "state": "OK",
+      "since": "2024-09-08T14:35:32+00:00"
     }
   },
-  "trigger": "scheduled"
+  "trigger": "monitor"
 }
