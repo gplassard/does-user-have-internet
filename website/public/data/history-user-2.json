@@ -3143,6 +3143,12 @@
       "since": "2024-08-28T18:23:35+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "state": "OK",
+      "trigger": "scheduled",
+      "date": "2024-10-03T00:30:06.587Z",
+      "since": "2024-08-28T18:23:35+00:00"
     }
   ]
 }
