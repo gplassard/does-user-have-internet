@@ -3245,6 +3245,12 @@
       "since": "2024-10-14T06:26:32+00:00",
       "state": "Alert",
       "trigger": "monitor"
+    },
+    {
+      "state": "OK",
+      "trigger": "monitor",
+      "date": "2024-10-14T06:34:11.223Z",
+      "since": "2024-10-14T06:34:02+00:00"
     }
   ]
 }
