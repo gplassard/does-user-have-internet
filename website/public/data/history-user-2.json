@@ -3257,6 +3257,12 @@
       "state": "OK",
       "trigger": "scheduled",
       "date": "2024-10-17T00:30:03.719Z"
+    },
+    {
+      "since": "2024-08-28T18:23:35+00:00",
+      "state": "OK",
+      "trigger": "scheduled",
+      "date": "2024-10-18T00:30:04.195Z"
     }
   ]
 }
