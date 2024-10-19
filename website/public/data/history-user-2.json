@@ -3263,6 +3263,12 @@
       "state": "OK",
       "trigger": "scheduled",
       "date": "2024-10-18T00:30:04.195Z"
+    },
+    {
+      "date": "2024-10-19T00:30:03.828Z",
+      "since": "2024-08-28T18:23:35+00:00",
+      "state": "OK",
+      "trigger": "scheduled"
     }
   ]
 }
