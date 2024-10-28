@@ -227,7 +227,7 @@
       },
       "steps": [
         {
-          "exec": "pnpm dlx npm-check-updates@16 --upgrade --target=latest --peer --dep=dev,peer,prod,optional --filter=@cdktf/provider-aws,@cdktf/provider-datadog,@gplassard/cdktf-extensions,@gplassard/projen-extensions,@types/jest,cdktf,cdktf-cli,eslint-import-resolver-typescript,eslint-plugin-import,jest,projen,ts-jest,ts-node,typescript,constructs"
+          "exec": "pnpm dlx npm-check-updates@16 --upgrade --target=latest --peer --dep=dev,peer,prod,optional --filter=@cdktf/provider-aws,@cdktf/provider-datadog,@gplassard/cdktf-extensions,@gplassard/projen-extensions,@types/jest,@types/node,cdktf,cdktf-cli,eslint-import-resolver-typescript,eslint-plugin-import,jest,projen,ts-jest,ts-node,typescript,constructs"
         },
         {
           "exec": "pnpm i --no-frozen-lockfile"
