@@ -3533,6 +3533,12 @@
       "since": "2024-11-14T23:55:33+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "state": "OK",
+      "trigger": "monitor",
+      "date": "2024-11-17T06:08:52.798Z",
+      "since": "2024-11-14T23:55:33+00:00"
     }
   ]
 }
