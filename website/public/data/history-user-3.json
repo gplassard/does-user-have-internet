@@ -3611,6 +3611,12 @@
       "since": "2024-11-21T19:38:01+00:00",
       "state": "Alert",
       "trigger": "scheduled"
+    },
+    {
+      "trigger": "monitor",
+      "date": "2024-11-22T05:08:20.213Z",
+      "since": "2024-11-22T05:08:01+00:00",
+      "state": "OK"
     }
   ]
 }
