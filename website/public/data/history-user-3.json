@@ -3767,6 +3767,12 @@
       "state": "Alert",
       "trigger": "monitor",
       "date": "2024-11-28T19:58:25.601Z"
+    },
+    {
+      "date": "2024-11-29T01:30:05.785Z",
+      "since": "2024-11-28T19:58:01+00:00",
+      "state": "Alert",
+      "trigger": "scheduled"
     }
   ]
 }
