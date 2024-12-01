@@ -3827,6 +3827,12 @@
       "since": "2024-12-01T05:07:01+00:00",
       "state": "OK",
       "trigger": "monitor"
+    },
+    {
+      "date": "2024-12-01T19:38:16.078Z",
+      "since": "2024-12-01T19:38:01+00:00",
+      "state": "Alert",
+      "trigger": "monitor"
     }
   ]
 }
