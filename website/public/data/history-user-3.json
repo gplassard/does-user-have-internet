@@ -3833,6 +3833,12 @@
       "since": "2024-12-01T19:38:01+00:00",
       "state": "Alert",
       "trigger": "monitor"
+    },
+    {
+      "since": "2024-12-01T19:38:01+00:00",
+      "state": "Alert",
+      "trigger": "scheduled",
+      "date": "2024-12-02T01:30:05.740Z"
     }
   ]
 }
