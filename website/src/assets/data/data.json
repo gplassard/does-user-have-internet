@@ -10,8 +10,8 @@
       "state": "OK"
     },
     "user-3": {
-      "since": "2024-12-03T20:24:32+00:00",
-      "state": "Alert"
+      "state": "OK",
+      "since": "2024-12-04T05:08:31+00:00"
     },
     "user-4": {
       "state": "OK",
