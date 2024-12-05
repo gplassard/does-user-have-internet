@@ -3893,6 +3893,12 @@
       "since": "2024-08-28T18:23:35+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "date": "2024-12-05T04:57:17.199Z",
+      "since": "2024-08-28T18:23:35+00:00",
+      "state": "OK",
+      "trigger": "monitor"
     }
   ]
 }
