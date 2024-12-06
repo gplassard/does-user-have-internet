@@ -3917,6 +3917,12 @@
       "state": "OK",
       "trigger": "monitor",
       "date": "2024-12-06T05:14:21.092Z"
+    },
+    {
+      "since": "2024-12-06T19:48:02+00:00",
+      "state": "Alert",
+      "trigger": "monitor",
+      "date": "2024-12-06T19:48:12.102Z"
     }
   ]
 }
