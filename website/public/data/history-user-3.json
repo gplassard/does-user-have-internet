@@ -3905,6 +3905,12 @@
       "state": "Alert",
       "trigger": "monitor",
       "date": "2024-12-05T19:38:10.672Z"
+    },
+    {
+      "since": "2024-12-05T19:38:02+00:00",
+      "state": "Alert",
+      "trigger": "scheduled",
+      "date": "2024-12-06T01:30:06.332Z"
     }
   ]
 }
