@@ -3923,6 +3923,12 @@
       "state": "Alert",
       "trigger": "monitor",
       "date": "2024-12-06T19:48:12.102Z"
+    },
+    {
+      "trigger": "monitor",
+      "date": "2024-12-06T23:05:10.542Z",
+      "since": "2024-12-06T23:05:01+00:00",
+      "state": "OK"
     }
   ]
 }
