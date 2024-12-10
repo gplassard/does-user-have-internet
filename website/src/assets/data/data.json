@@ -1,22 +1,22 @@
 {
-  "lastUpdatedAt": "2024-12-10T01:30:04.562Z",
+  "lastUpdatedAt": "2024-12-10T13:06:21.372Z",
   "users": {
     "user-1": {
-      "since": "2024-12-06T23:05:03+00:00",
-      "state": "OK"
+      "state": "OK",
+      "since": "2024-12-06T23:05:03+00:00"
     },
     "user-2": {
       "state": "OK",
       "since": "2024-12-06T23:05:04+00:00"
     },
     "user-3": {
-      "since": "2024-12-06T23:05:01+00:00",
-      "state": "OK"
+      "since": "2024-12-10T13:06:02+00:00",
+      "state": "Alert"
     },
     "user-4": {
-      "since": "2024-12-06T23:05:02+00:00",
-      "state": "OK"
+      "state": "OK",
+      "since": "2024-12-06T23:05:02+00:00"
     }
   },
-  "trigger": "scheduled"
+  "trigger": "monitor"
 }
