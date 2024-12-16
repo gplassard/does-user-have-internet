@@ -3989,6 +3989,12 @@
       "state": "Alert",
       "trigger": "scheduled",
       "date": "2024-12-15T01:30:05.478Z"
+    },
+    {
+      "state": "Alert",
+      "trigger": "scheduled",
+      "date": "2024-12-16T01:30:06.876Z",
+      "since": "2024-12-10T13:06:02+00:00"
     }
   ]
 }
