@@ -4193,6 +4193,12 @@
       "since": "2024-12-06T23:05:03+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "state": "OK",
+      "trigger": "monitor",
+      "date": "2025-01-16T01:57:12.896Z",
+      "since": "2024-12-06T23:05:03+00:00"
     }
   ]
 }
