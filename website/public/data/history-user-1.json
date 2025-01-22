@@ -4265,6 +4265,12 @@
       "since": "2025-01-22T03:56:33+00:00",
       "state": "OK",
       "trigger": "monitor"
+    },
+    {
+      "since": "2025-01-22T04:05:33+00:00",
+      "state": "Alert",
+      "trigger": "monitor",
+      "date": "2025-01-22T04:05:47.212Z"
     }
   ]
 }
