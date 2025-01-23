@@ -4277,6 +4277,12 @@
       "since": "2025-01-16T02:06:02+00:00",
       "state": "OK",
       "trigger": "monitor"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2025-01-23T01:30:06.176Z",
+      "since": "2025-01-16T02:06:02+00:00",
+      "state": "OK"
     }
   ]
 }
