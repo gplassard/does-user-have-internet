@@ -4445,6 +4445,12 @@
       "since": "2025-02-20T01:12:31+00:00",
       "state": "Alert",
       "trigger": "monitor"
+    },
+    {
+      "since": "2025-02-20T01:29:31+00:00",
+      "state": "OK",
+      "trigger": "monitor",
+      "date": "2025-02-20T01:29:40.268Z"
     }
   ]
 }
