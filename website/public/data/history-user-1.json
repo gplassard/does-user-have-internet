@@ -4529,6 +4529,12 @@
       "state": "Alert",
       "trigger": "scheduled",
       "date": "2025-03-03T01:30:05.486Z"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2025-03-04T01:30:03.837Z",
+      "since": "2025-02-17T15:24:04+00:00",
+      "state": "Alert"
     }
   ]
 }
