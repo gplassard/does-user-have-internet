@@ -4577,6 +4577,12 @@
       "since": "2024-12-06T23:05:04+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2025-03-14T01:30:05.069Z",
+      "since": "2024-12-06T23:05:04+00:00",
+      "state": "OK"
     }
   ]
 }
