@@ -9,4 +9,12 @@ const project = new TypescriptApplicationProject({
   peerDeps: ['cdktf-cli', 'cdktf', 'constructs', '@cdktf/provider-aws', '@cdktf/provider-datadog', '@gplassard/cdktf-extensions'],
   gitignore: ['*.tfstate*', 'cdktf.out'],
 });
+project.addScripts({
+  cdktf: 'cdktf',
+});
+project.tryFindObjectFile('package.json')?.addOverride('pnpm', {
+  onlyBuiltDependencies: [
+    '@cdktf/node-pty-prebuilt-multiarch',
+  ],
+});
 project.synth();

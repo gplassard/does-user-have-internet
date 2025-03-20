@@ -38,13 +38,12 @@ But does it work ? Yes !
   * Configure S3 Bucket for Terraform State
   * Configure Parameter Store for Configuration
 * You need a Datadog Account and access credentials
-  * [Create datadog workflows](docs/architecture/workflow.json)
 * [Access to github registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry)
-* Have yarn / nodejs / python / pipenv
+* Have pnpm / nodejs / python / pipenv
 
 ```bash
 # Installation
-yarn install # install node dependencies
+pnpm install # install node dependencies
 cd website && yarn install # install dependencies for website 
 pipenv install # install python dependencies
 pipenv shell # start a shell with python environment
@@ -52,6 +51,6 @@ pipenv shell # start a shell with python environment
 # Useful commands
 python ./docs/architecture/diagram.py # generate architecture diagram
 cd website && yarn dev # start website locally
-yarn cdk-tf apply # deploy terraform stack
-yarn projen # update project files managed by projen
+pnpm run cdktf apply # deploy terraform stack
+pnpm run projen # update project files managed by projen
 ```
