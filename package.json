@@ -19,7 +19,8 @@
     "unbump": "npx projen unbump",
     "upgrade": "npx projen upgrade",
     "watch": "npx projen watch",
-    "projen": "npx projen"
+    "projen": "npx projen",
+    "cdktf": "cdktf"
   },
   "devDependencies": {
     "@cdktf/provider-aws": "21.1.0",
@@ -51,7 +52,11 @@
     "cdktf-cli": "^0.21.0",
     "constructs": "^10.4.2"
   },
-  "pnpm": {},
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@cdktf/node-pty-prebuilt-multiarch"
+    ]
+  },
   "main": "lib/index.js",
   "license": "Apache-2.0",
   "publishConfig": {
