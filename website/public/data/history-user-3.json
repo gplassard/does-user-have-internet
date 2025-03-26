@@ -4667,6 +4667,12 @@
       "state": "Alert",
       "trigger": "scheduled",
       "date": "2025-03-26T01:30:05.641Z"
+    },
+    {
+      "state": "Alert",
+      "trigger": "manual",
+      "date": "2025-03-26T20:05:44.032Z",
+      "since": "2025-03-25T11:43:01+00:00"
     }
   ]
 }
