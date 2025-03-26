@@ -8,13 +8,9 @@ const project = new TypescriptApplicationProject({
   devDeps: ['cdktf-cli', 'cdktf', 'constructs', '@cdktf/provider-aws', '@cdktf/provider-datadog', '@gplassard/cdktf-extensions'],
   peerDeps: ['cdktf-cli', 'cdktf', 'constructs', '@cdktf/provider-aws', '@cdktf/provider-datadog', '@gplassard/cdktf-extensions'],
   gitignore: ['*.tfstate*', 'cdktf.out'],
+  nodeVersion: '20.19.0',
 });
 project.addScripts({
   cdktf: 'cdktf',
-});
-project.tryFindObjectFile('package.json')?.addOverride('pnpm', {
-  onlyBuiltDependencies: [
-    '@cdktf/node-pty-prebuilt-multiarch',
-  ],
 });
 project.synth();

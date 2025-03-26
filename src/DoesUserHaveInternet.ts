@@ -16,10 +16,10 @@ export class DoesUserHaveInternet extends TerraformStack {
       region: 'eu-west-1',
     });
     const apiKeyParam = new DataAwsSsmParameter(this, 'ddApiKey', {
-      name: 'datadog-dd-api-key',
+      name: '/app/ssm-env/env/datadog/DD_API_KEY',
     });
     const appKeyParam = new DataAwsSsmParameter(this, 'ddAppKey', {
-      name: 'datadog-dd-app-key',
+      name: '/app/ssm-env/env/datadog/DD_APP_KEY',
     });
     const slackWorkspaceParam = new DataAwsSsmParameter(this, 'slackWorkspaceName', {
       name: '/global/slack/workspace-name',
