@@ -4685,6 +4685,12 @@
       "since": "2025-03-18T18:55:02+00:00",
       "state": "OK",
       "trigger": "manual"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2025-03-27T01:30:44.456Z",
+      "since": "2025-03-18T18:55:02+00:00",
+      "state": "OK"
     }
   ]
 }
