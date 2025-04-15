@@ -10,12 +10,12 @@
       "state": "OK"
     },
     "user-3": {
-      "state": "OK",
-      "since": "2025-04-03T16:12:01+00:00"
+      "since": "2025-04-03T16:12:01+00:00",
+      "state": "OK"
     },
     "user-4": {
-      "since": "2025-04-15T08:46:02+00:00",
-      "state": "Alert"
+      "state": "OK",
+      "since": "2025-04-15T10:05:02+00:00"
     }
   },
   "trigger": "monitor"

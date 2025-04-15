@@ -4889,6 +4889,12 @@
       "since": "2025-04-15T08:46:02+00:00",
       "state": "Alert",
       "trigger": "monitor"
+    },
+    {
+      "state": "OK",
+      "trigger": "monitor",
+      "date": "2025-04-15T10:05:11.874Z",
+      "since": "2025-04-15T10:05:02+00:00"
     }
   ]
 }
