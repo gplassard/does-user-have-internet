@@ -4877,6 +4877,12 @@
       "state": "Alert",
       "trigger": "monitor",
       "date": "2025-04-15T10:05:11.874Z"
+    },
+    {
+      "state": "Alert",
+      "trigger": "scheduled",
+      "date": "2025-04-16T00:30:44.298Z",
+      "since": "2025-02-17T15:24:04+00:00"
     }
   ]
 }
