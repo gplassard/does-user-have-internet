@@ -1,17 +1,17 @@
 {
-  "lastUpdatedAt": "2025-04-19T00:30:42.899Z",
+  "lastUpdatedAt": "2025-04-20T00:30:42.777Z",
   "users": {
     "user-1": {
-      "state": "Alert",
-      "since": "2025-02-17T15:24:04+00:00"
+      "since": "2025-02-17T15:24:04+00:00",
+      "state": "Alert"
     },
     "user-2": {
       "state": "OK",
       "since": "2024-12-06T23:05:04+00:00"
     },
     "user-3": {
-      "since": "2025-04-03T16:12:01+00:00",
-      "state": "OK"
+      "state": "OK",
+      "since": "2025-04-03T16:12:01+00:00"
     },
     "user-4": {
       "state": "OK",
