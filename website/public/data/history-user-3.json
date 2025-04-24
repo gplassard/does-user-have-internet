@@ -4919,6 +4919,12 @@
       "since": "2025-04-03T16:12:01+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2025-04-24T00:30:44.494Z",
+      "since": "2025-04-03T16:12:01+00:00",
+      "state": "OK"
     }
   ]
 }
