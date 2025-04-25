@@ -4943,6 +4943,12 @@
       "since": "2025-04-15T10:05:02+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "state": "OK",
+      "trigger": "scheduled",
+      "date": "2025-04-25T00:30:43.338Z",
+      "since": "2025-04-15T10:05:02+00:00"
     }
   ]
 }
