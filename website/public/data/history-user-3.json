@@ -4973,6 +4973,12 @@
       "state": "Alert",
       "trigger": "monitor",
       "date": "2025-04-30T12:10:40.086Z"
+    },
+    {
+      "date": "2025-04-30T12:13:20.621Z",
+      "since": "2025-04-30T12:13:02+00:00",
+      "state": "OK",
+      "trigger": "monitor"
     }
   ]
 }

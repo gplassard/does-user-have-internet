@@ -4979,6 +4979,12 @@
       "state": "OK",
       "trigger": "scheduled",
       "date": "2025-04-30T00:30:43.775Z"
+    },
+    {
+      "state": "OK",
+      "trigger": "monitor",
+      "date": "2025-04-30T12:13:20.621Z",
+      "since": "2025-04-25T01:45:02+00:00"
     }
   ]
 }
