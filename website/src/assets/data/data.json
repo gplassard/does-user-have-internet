@@ -6,8 +6,8 @@
       "state": "Alert"
     },
     "user-2": {
-      "since": "2025-06-02T07:45:34+00:00",
-      "state": "Alert"
+      "since": "2025-06-02T07:54:34+00:00",
+      "state": "OK"
     },
     "user-3": {
       "state": "OK",
