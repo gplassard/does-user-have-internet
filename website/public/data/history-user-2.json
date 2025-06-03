@@ -5189,6 +5189,12 @@
       "since": "2025-06-02T07:54:34+00:00",
       "state": "OK",
       "trigger": "monitor"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2025-06-03T00:30:42.684Z",
+      "since": "2025-06-02T07:54:34+00:00",
+      "state": "OK"
     }
   ]
 }
