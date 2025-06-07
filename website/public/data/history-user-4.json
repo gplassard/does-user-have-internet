@@ -5207,6 +5207,12 @@
       "since": "2025-04-25T01:45:02+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "state": "OK",
+      "trigger": "scheduled",
+      "date": "2025-06-07T00:30:44.116Z",
+      "since": "2025-04-25T01:45:02+00:00"
     }
   ]
 }
