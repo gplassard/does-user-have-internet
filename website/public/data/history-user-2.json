@@ -5225,6 +5225,12 @@
       "since": "2025-06-02T07:54:34+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2025-06-09T00:30:43.360Z",
+      "since": "2025-06-02T07:54:34+00:00",
+      "state": "OK"
     }
   ]
 }
