@@ -5333,6 +5333,12 @@
       "state": "Alert",
       "trigger": "monitor",
       "date": "2025-06-24T06:46:13.248Z"
+    },
+    {
+      "date": "2025-06-24T06:55:25.079Z",
+      "since": "2025-06-24T06:55:03+00:00",
+      "state": "OK",
+      "trigger": "monitor"
     }
   ]
 }
