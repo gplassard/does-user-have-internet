@@ -32,7 +32,8 @@ jspm_packages/
 .cache
 *.tfstate*
 cdktf.out
-!/jest.config.json
+/test-reports/
+junit.xml
 /coverage/
 !/.github/workflows/build.yml
 /dist/changelog.md
@@ -52,4 +53,6 @@ cdktf.out
 *.iml
 .vscode
 .DS_Store
+!/.github/workflows/datadog-software-composition-analysis.yml
+!/.github/workflows/datadog-static-analysis.yml
 !/.projenrc.ts
