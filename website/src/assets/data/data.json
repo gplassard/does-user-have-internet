@@ -2,12 +2,12 @@
   "lastUpdatedAt": "2025-07-13T00:30:43.337Z",
   "users": {
     "user-1": {
-      "state": "Alert",
-      "since": "2025-02-17T15:24:04+00:00"
+      "since": "2025-02-17T15:24:04+00:00",
+      "state": "Alert"
     },
     "user-2": {
-      "state": "OK",
-      "since": "2025-06-02T07:54:34+00:00"
+      "since": "2025-06-02T07:54:34+00:00",
+      "state": "OK"
     },
     "user-3": {
       "state": "OK",
