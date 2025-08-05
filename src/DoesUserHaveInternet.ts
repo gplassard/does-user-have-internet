@@ -1,7 +1,7 @@
 import { DataAwsSsmParameter } from '@cdktf/provider-aws/lib/data-aws-ssm-parameter';
 import { AwsProvider } from '@cdktf/provider-aws/lib/provider';
 import { DatadogProvider } from '@cdktf/provider-datadog/lib/provider';
-import { Fn, S3Backend, TerraformStack } from 'cdktf';
+import { S3Backend, TerraformStack } from 'cdktf';
 import { Construct } from 'constructs';
 import { InternetAccessMonitor } from './monitors/InternetAccessMonitor';
 
