@@ -9,7 +9,7 @@ export interface InternetAccessMonitorProps {
   expectedResult: string;
   name: string;
   slackWorkspace: string;
-  tags: DatadogTags & {provider: string; server: string};
+  tags: DatadogTags & { provider: string; server: string };
 }
 
 export class InternetAccessMonitor extends Construct {
