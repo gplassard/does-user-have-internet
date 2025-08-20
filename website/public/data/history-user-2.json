@@ -5651,6 +5651,12 @@
       "state": "OK",
       "trigger": "scheduled",
       "date": "2025-08-19T00:30:42.719Z"
+    },
+    {
+      "date": "2025-08-20T00:30:42.569Z",
+      "since": "2025-06-02T07:54:34+00:00",
+      "state": "OK",
+      "trigger": "scheduled"
     }
   ]
 }
