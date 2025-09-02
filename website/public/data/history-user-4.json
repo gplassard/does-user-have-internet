@@ -5723,6 +5723,12 @@
       "since": "2025-08-31T13:14:32+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "since": "2025-08-31T13:14:32+00:00",
+      "state": "OK",
+      "trigger": "scheduled",
+      "date": "2025-09-02T00:30:45.565Z"
     }
   ]
 }
