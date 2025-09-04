@@ -1,0 +1,299 @@
+{
+  "triggers": [
+    {
+      "startStepNames": [
+        "List_monitors"
+      ],
+      "monitorTrigger": {}
+    },
+    {
+      "startStepNames": [
+        "List_monitors"
+      ],
+      "scheduleTrigger": {
+        "rruleExpression": "DTSTART;TZID=Europe/Paris:20250904T211249\nFREQ=DAILY;INTERVAL=1;BYHOUR=2;BYMINUTE=30"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "name": "List_monitors",
+      "actionId": "com.datadoghq.dd.monitor.listMonitors",
+      "parameters": [
+        {
+          "name": "monitor_tags",
+          "value": [
+            "app:doesuserhaveinternet"
+          ]
+        }
+      ],
+      "outboundEdges": [
+        {
+          "nextStepName": "CurrentTime",
+          "branchName": "main"
+        }
+      ],
+      "display": {
+        "bounds": {
+          "x": 192,
+          "y": 192
+        }
+      }
+    },
+    {
+      "name": "Extract_status",
+      "actionId": "com.datadoghq.datatransformation.func",
+      "parameters": [
+        {
+          "name": "script",
+          "value": "// Use `$` to access Trigger or Steps data.\n// Use `_` to access Lodash.\n// See https://lodash.com/ for reference.\n\nconst statuses = Object.values($.Steps.List_monitors)\n   .map(m => ({\n        state: m.overall_state, \n        since: m.overall_state_modified,\n        user: m.tags.find(t => t.startsWith(\"x-user:\"))?.replace(\"x-user:\", \"\")\n    }));\n\n\nreturn {statuses};"
+        }
+      ],
+      "outboundEdges": [
+        {
+          "nextStepName": "For_loop",
+          "branchName": "main"
+        }
+      ],
+      "display": {
+        "bounds": {
+          "x": 192,
+          "y": 480
+        }
+      }
+    },
+    {
+      "name": "CurrentTime",
+      "actionId": "com.datadoghq.datatransformation.func",
+      "parameters": [
+        {
+          "name": "script",
+          "value": "return {\n    date: new Date().toISOString()\n};"
+        }
+      ],
+      "outboundEdges": [
+        {
+          "nextStepName": "Extract_status",
+          "branchName": "main"
+        }
+      ],
+      "display": {
+        "bounds": {
+          "x": 192,
+          "y": 360
+        }
+      }
+    },
+    {
+      "name": "Update_lastUpdatedAt",
+      "actionId": "com.datadoghq.github.configChange",
+      "parameters": [
+        {
+          "name": "operations",
+          "value": [
+            {
+              "file": "website/src/assets/data/data.json",
+              "ops": [
+                {
+                  "kind": "upsert",
+                  "path": "lastUpdatedAt",
+                  "value": "{{ Steps.CurrentTime.data.date }}"
+                },
+                {
+                  "kind": "upsert",
+                  "path": "trigger",
+                  "value": "{{ Source.type }}"
+                }
+              ],
+              "syntax": "json"
+            }
+          ]
+        },
+        {
+          "name": "repository",
+          "value": "gplassard/does-user-have-internet"
+        },
+        {
+          "name": "targetBranch",
+          "value": "main"
+        },
+        {
+          "name": "prTitle",
+          "value": "chore(data): update data"
+        },
+        {
+          "name": "createPr",
+          "value": true
+        }
+      ],
+      "outboundEdges": [
+        {
+          "nextStepName": "Trigger_github_actions_workflow_run",
+          "branchName": "main"
+        }
+      ],
+      "display": {
+        "bounds": {
+          "x": 192,
+          "y": 972
+        }
+      }
+    },
+    {
+      "name": "Trigger_github_actions_workflow_run",
+      "actionId": "com.datadoghq.github.actions.triggerWorkflowRun",
+      "parameters": [
+        {
+          "name": "workflowId",
+          "value": "automerge-pr.yml"
+        },
+        {
+          "name": "repository",
+          "value": "gplassard/does-user-have-internet"
+        },
+        {
+          "name": "ref",
+          "value": "main"
+        },
+        {
+          "name": "inputs",
+          "value": {
+            "pr": "{{ Steps.Update_lastUpdatedAt.data.number }}"
+          }
+        }
+      ],
+      "outboundEdges": [
+        {
+          "nextStepName": "Get_pull_request_status",
+          "branchName": "main"
+        }
+      ],
+      "display": {
+        "bounds": {
+          "x": 192,
+          "y": 1164
+        }
+      }
+    },
+    {
+      "name": "Get_pull_request_status",
+      "actionId": "com.datadoghq.github.checkPRStatus",
+      "parameters": [
+        {
+          "name": "prNumber",
+          "value": "{{ Steps.Update_lastUpdatedAt.data.number }}"
+        },
+        {
+          "name": "repository",
+          "value": "gplassard/does-user-have-internet"
+        }
+      ],
+      "completionGate": {
+        "completionCondition": {
+          "operand1": "{{ merged }}",
+          "operator": "OPERATOR_EQUAL",
+          "operand2": true
+        },
+        "retryStrategy": {
+          "kind": "RETRY_STRATEGY_LINEAR",
+          "linear": {
+            "interval": "60s",
+            "maxRetries": 60
+          }
+        }
+      },
+      "display": {
+        "bounds": {
+          "x": 192,
+          "y": 1404
+        }
+      }
+    },
+    {
+      "name": "For_loop",
+      "actionId": "com.datadoghq.core.forLoop",
+      "parameters": [
+        {
+          "name": "inputList",
+          "value": "{{ Steps.Extract_status.data.statuses }}"
+        }
+      ],
+      "outboundEdges": [
+        {
+          "nextStepName": "Update_lastUpdatedAt",
+          "branchName": "main"
+        },
+        {
+          "nextStepName": "Update_data_files",
+          "branchName": "loopStart"
+        }
+      ],
+      "display": {
+        "bounds": {
+          "x": 168,
+          "y": 600
+        }
+      }
+    },
+    {
+      "name": "Update_data_files",
+      "actionId": "com.datadoghq.github.configChange",
+      "parameters": [
+        {
+          "name": "operations",
+          "value": [
+            {
+              "file": "website/src/assets/data/data.json",
+              "ops": [
+                {
+                  "kind": "upsert",
+                  "path": "users.{{ Current.Value.user }}",
+                  "value": {
+                    "since": "{{ Current.Value.since }}",
+                    "state": "{{ Current.Value.state }}"
+                  }
+                }
+              ],
+              "syntax": "json"
+            },
+            {
+              "file": "website/public/data/history-{{ Current.Value.user }}.json",
+              "ops": [
+                {
+                  "kind": "append",
+                  "path": "history",
+                  "value": {
+                    "date": "{{ Steps.CurrentTime.data.date }}",
+                    "since": "{{ Current.Value.since }}",
+                    "state": "{{ Current.Value.state }}",
+                    "trigger": "{{ Source.type }}"
+                  }
+                }
+              ],
+              "syntax": "auto"
+            }
+          ]
+        },
+        {
+          "name": "repository",
+          "value": "gplassard/does-user-have-internet"
+        },
+        {
+          "name": "targetBranch",
+          "value": "main"
+        },
+        {
+          "name": "createPr",
+          "value": false
+        }
+      ],
+      "display": {
+        "bounds": {
+          "x": 192,
+          "y": 708
+        }
+      }
+    }
+  ],
+  "handle": "DoesUserHaveInternet-Monitor"
+}

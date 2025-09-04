@@ -12,8 +12,8 @@ importers:
         specifier: 21.1.0
         version: 21.1.0(cdktf@0.21.0(constructs@10.4.2))(constructs@10.4.2)
       '@cdktf/provider-datadog':
-        specifier: 12.4.0
-        version: 12.4.0(cdktf@0.21.0(constructs@10.4.2))(constructs@10.4.2)
+        specifier: 12.6.0
+        version: 12.6.0(cdktf@0.21.0(constructs@10.4.2))(constructs@10.4.2)
       '@gplassard/cdktf-extensions':
         specifier: ^0.0.25
         version: 0.0.25(cdktf@0.21.0(constructs@10.4.2))(constructs@10.4.2)
@@ -132,8 +132,8 @@ packages:
       cdktf: ^0.21.0
       constructs: ^10.4.2
 
-  '@cdktf/provider-datadog@12.4.0':
-    resolution: {integrity: sha512-bV1k4AlRydYIfnWAF7+Q5wnjmNEy0Wf++jAe0JW8ya14t/8gjWxehgV6VJEmUKMBkDmJ4kL2vTggN+61gZWwEQ==}
+  '@cdktf/provider-datadog@12.6.0':
+    resolution: {integrity: sha512-QgTNqc8VTUmI2oIGkz6Ll6bJ9rjGxtm3B1+Nu5TQoOF7POlkNKQt1Q5zAVk50Yf7DjC/bbPCUkN+x1wiSparcg==}
     engines: {node: '>= 20.9.0'}
     peerDependencies:
       cdktf: ^0.21.0
@@ -3785,7 +3785,7 @@ snapshots:
       cdktf: 0.21.0(constructs@10.4.2)
       constructs: 10.4.2
 
-  '@cdktf/provider-datadog@12.4.0(cdktf@0.21.0(constructs@10.4.2))(constructs@10.4.2)':
+  '@cdktf/provider-datadog@12.6.0(cdktf@0.21.0(constructs@10.4.2))(constructs@10.4.2)':
     dependencies:
       cdktf: 0.21.0(constructs@10.4.2)
       constructs: 10.4.2

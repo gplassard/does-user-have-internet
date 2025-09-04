@@ -4,6 +4,7 @@ import { DatadogProvider } from '@cdktf/provider-datadog/lib/provider';
 import { S3Backend, TerraformStack } from 'cdktf';
 import { Construct } from 'constructs';
 import { InternetAccessMonitor } from './monitors/InternetAccessMonitor';
+import { UpdateGithubDataWorkflow } from './workflow/UpdateGithubDataWorkflow';
 
 export class DoesUserHaveInternet extends TerraformStack {
   constructor(scope: Construct, id: string) {
@@ -15,10 +16,10 @@ export class DoesUserHaveInternet extends TerraformStack {
       region: 'eu-west-1',
     });
     const apiKeyParam = new DataAwsSsmParameter(this, 'ddApiKey', {
-      name: 'datadog-dd-api-key',
+      name: '/app/ssm-env/env/datadog/DD_API_KEY',
     });
     const appKeyParam = new DataAwsSsmParameter(this, 'ddAppKey', {
-      name: 'datadog-dd-app-key',
+      name: '/app/ssm-env/env/datadog/DD_APP_KEY',
     });
     const slackWorkspaceParam = new DataAwsSsmParameter(this, 'slackWorkspaceName', {
       name: '/global/slack/workspace-name',
@@ -32,6 +33,17 @@ export class DoesUserHaveInternet extends TerraformStack {
       apiUrl: 'https://api.datadoghq.eu',
       apiKey: apiKeyParam.value,
       appKey: appKeyParam.value,
+    });
+
+    new UpdateGithubDataWorkflow(this, 'UpdateGithubDataWorkflow', {
+      tags: {
+        scope: 'perso',
+        app: 'doesuserhaveinternet',
+        env: 'prod',
+        infraAsCode: 'cdktf',
+        team: teamParam.value,
+        repo: 'gplassard/does-user-have-internet',
+      },
     });
 
     // TODO make foreach work
