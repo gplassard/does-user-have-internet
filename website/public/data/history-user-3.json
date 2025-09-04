@@ -5759,6 +5759,12 @@
       "state": "OK",
       "trigger": "monitor",
       "date": "2025-09-03T09:23:16.216Z"
+    },
+    {
+      "state": "OK",
+      "trigger": "scheduled",
+      "date": "2025-09-04T00:30:43.237Z",
+      "since": "2025-06-13T14:02:02+00:00"
     }
   ]
 }
