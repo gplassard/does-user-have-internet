@@ -1,7 +1,7 @@
 import { WorkflowAutomation } from '@cdktf/provider-datadog/lib/workflow-automation';
 import { DatadogTags, toDatadogTags } from '@gplassard/cdktf-extensions';
 import { Construct } from 'constructs';
-import * as spec from './workflow.json';
+import spec from './workflow.json';
 
 export interface UpdateGithubDataWorkflowProps {
   tags: DatadogTags;
