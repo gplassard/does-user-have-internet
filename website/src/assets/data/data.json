@@ -1,5 +1,5 @@
 {
-  "lastUpdatedAt": "2025-09-04T00:30:43.237Z",
+  "lastUpdatedAt": "2025-09-04T19:06:21.605Z",
   "users": {
     "user-1": {
       "state": "Alert",
@@ -10,13 +10,13 @@
       "state": "OK"
     },
     "user-3": {
-      "since": "2025-06-13T14:02:02+00:00",
-      "state": "OK"
+      "state": "OK",
+      "since": "2025-06-13T14:02:02+00:00"
     },
     "user-4": {
-      "state": "OK",
-      "since": "2025-09-03T09:23:02+00:00"
+      "since": "2025-09-03T09:23:02+00:00",
+      "state": "OK"
     }
   },
-  "trigger": "scheduled"
+  "trigger": "manual"
 }
