@@ -5879,6 +5879,12 @@
       "state": "Alert",
       "trigger": "monitor",
       "date": "2025-09-19T01:59:20.570Z"
+    },
+    {
+      "date": "2025-09-19T02:18:15.676Z",
+      "since": "2025-09-19T02:18:05+00:00",
+      "state": "OK",
+      "trigger": "monitor"
     }
   ]
 }
