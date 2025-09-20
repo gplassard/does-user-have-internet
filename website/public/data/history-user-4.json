@@ -5855,6 +5855,12 @@
       "since": "2025-09-03T09:23:02+00:00",
       "state": "OK",
       "trigger": "monitor"
+    },
+    {
+      "date": "2025-09-20T00:30:54.526Z",
+      "since": "2025-09-03T09:23:02+00:00",
+      "state": "OK",
+      "trigger": "scheduled"
     }
   ]
 }
