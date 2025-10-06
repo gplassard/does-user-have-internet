@@ -5843,6 +5843,12 @@
       "state": "Alert",
       "trigger": "scheduled",
       "date": "2025-10-05T00:30:53.604Z"
+    },
+    {
+      "state": "Alert",
+      "trigger": "scheduled",
+      "date": "2025-10-06T00:30:53.194Z",
+      "since": "2025-02-17T15:24:04+00:00"
     }
   ]
 }
