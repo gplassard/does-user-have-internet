@@ -5885,6 +5885,12 @@
       "since": "2025-02-17T15:24:04+00:00",
       "state": "Alert",
       "trigger": "scheduled"
+    },
+    {
+      "date": "2025-10-14T00:30:53.480Z",
+      "since": "2025-02-17T15:24:04+00:00",
+      "state": "Alert",
+      "trigger": "scheduled"
     }
   ]
 }
