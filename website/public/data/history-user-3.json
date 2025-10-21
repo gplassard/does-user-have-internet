@@ -6071,6 +6071,12 @@
       "state": "OK",
       "trigger": "scheduled",
       "date": "2025-10-20T00:30:53.533Z"
+    },
+    {
+      "state": "OK",
+      "trigger": "scheduled",
+      "date": "2025-10-21T00:30:53.560Z",
+      "since": "2025-06-13T14:02:02+00:00"
     }
   ]
 }
