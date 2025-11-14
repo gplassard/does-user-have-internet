@@ -6203,6 +6203,12 @@
       "state": "OK",
       "trigger": "scheduled",
       "date": "2025-11-13T01:30:53.065Z"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2025-11-14T01:30:54.279Z",
+      "since": "2025-09-19T02:18:05+00:00",
+      "state": "OK"
     }
   ]
 }

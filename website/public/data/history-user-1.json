@@ -6005,6 +6005,12 @@
       "state": "Alert",
       "trigger": "scheduled",
       "date": "2025-11-13T01:30:53.065Z"
+    },
+    {
+      "date": "2025-11-14T01:30:54.279Z",
+      "since": "2025-02-17T15:24:04+00:00",
+      "state": "Alert",
+      "trigger": "scheduled"
     }
   ]
 }
