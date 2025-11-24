@@ -6233,6 +6233,12 @@
       "state": "OK",
       "trigger": "scheduled",
       "date": "2025-11-23T01:30:53.334Z"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2025-11-24T01:30:53.446Z",
+      "since": "2025-10-01T19:54:32+00:00",
+      "state": "OK"
     }
   ]
 }
