@@ -1,21 +1,21 @@
 {
-  "lastUpdatedAt": "2025-11-29T01:30:53.288Z",
+  "lastUpdatedAt": "2025-11-30T01:30:53.511Z",
   "users": {
     "user-1": {
       "state": "Alert",
       "since": "2025-02-17T15:24:04+00:00"
     },
     "user-2": {
-      "since": "2025-09-19T02:18:05+00:00",
-      "state": "OK"
+      "state": "OK",
+      "since": "2025-09-19T02:18:05+00:00"
     },
     "user-3": {
       "state": "OK",
       "since": "2025-11-17T12:04:01+00:00"
     },
     "user-4": {
-      "since": "2025-10-01T19:54:32+00:00",
-      "state": "OK"
+      "state": "OK",
+      "since": "2025-10-01T19:54:32+00:00"
     }
   },
   "trigger": "scheduled"
