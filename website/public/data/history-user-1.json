@@ -6233,6 +6233,12 @@
       "state": "Alert",
       "trigger": "scheduled",
       "date": "2025-12-21T01:30:52.894Z"
+    },
+    {
+      "state": "Alert",
+      "trigger": "scheduled",
+      "date": "2025-12-22T01:30:53.774Z",
+      "since": "2025-02-17T15:24:04+00:00"
     }
   ]
 }
