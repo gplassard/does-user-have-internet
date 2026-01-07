@@ -6323,6 +6323,12 @@
       "state": "Alert",
       "trigger": "scheduled",
       "date": "2026-01-06T01:30:54.912Z"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2026-01-07T01:30:54.928Z",
+      "since": "2025-02-17T15:24:04+00:00",
+      "state": "Alert"
     }
   ]
 }
