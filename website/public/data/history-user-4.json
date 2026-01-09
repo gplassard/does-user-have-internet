@@ -6521,6 +6521,12 @@
       "state": "OK",
       "trigger": "monitor",
       "date": "2026-01-08T16:53:14.604Z"
+    },
+    {
+      "since": "2026-01-08T16:53:02+00:00",
+      "state": "OK",
+      "trigger": "scheduled",
+      "date": "2026-01-09T01:30:54.711Z"
     }
   ]
 }
