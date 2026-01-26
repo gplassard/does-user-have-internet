@@ -6449,6 +6449,12 @@
       "since": "2025-02-17T15:24:04+00:00",
       "state": "Alert",
       "trigger": "scheduled"
+    },
+    {
+      "state": "Alert",
+      "trigger": "scheduled",
+      "date": "2026-01-26T01:30:52.602Z",
+      "since": "2025-02-17T15:24:04+00:00"
     }
   ]
 }
