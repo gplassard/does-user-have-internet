@@ -6707,6 +6707,12 @@
       "since": "2025-09-19T02:18:05+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "trigger": "monitor",
+      "date": "2026-01-28T02:55:21.624Z",
+      "since": "2025-09-19T02:18:05+00:00",
+      "state": "OK"
     }
   ]
 }
