@@ -6731,6 +6731,12 @@
       "since": "2026-02-04T14:17:31+00:00",
       "state": "Alert",
       "trigger": "monitor"
+    },
+    {
+      "date": "2026-02-04T14:47:12.276Z",
+      "since": "2026-02-04T14:47:01+00:00",
+      "state": "OK",
+      "trigger": "monitor"
     }
   ]
 }
