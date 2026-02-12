@@ -6773,6 +6773,12 @@
       "since": "2026-02-12T12:05:32+00:00",
       "state": "Alert",
       "trigger": "monitor"
+    },
+    {
+      "date": "2026-02-12T12:13:20.150Z",
+      "since": "2026-02-12T12:13:02+00:00",
+      "state": "OK",
+      "trigger": "monitor"
     }
   ]
 }
