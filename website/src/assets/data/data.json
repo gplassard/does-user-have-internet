@@ -14,8 +14,8 @@
       "state": "OK"
     },
     "user-4": {
-      "since": "2026-02-12T12:13:02+00:00",
-      "state": "OK"
+      "state": "OK",
+      "since": "2026-02-12T12:13:02+00:00"
     }
   },
   "trigger": "scheduled"
