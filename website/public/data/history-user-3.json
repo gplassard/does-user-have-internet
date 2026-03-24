@@ -7043,6 +7043,12 @@
       "state": "Alert",
       "trigger": "monitor",
       "date": "2026-03-24T11:25:22.426Z"
+    },
+    {
+      "state": "OK",
+      "trigger": "monitor",
+      "date": "2026-03-24T11:37:15.730Z",
+      "since": "2026-03-24T11:37:02+00:00"
     }
   ]
 }
