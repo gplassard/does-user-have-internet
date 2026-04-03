@@ -7103,6 +7103,12 @@
       "state": "OK",
       "trigger": "scheduled",
       "date": "2026-04-03T00:30:52.462Z"
+    },
+    {
+      "since": "2026-03-13T01:43:02+00:00",
+      "state": "OK",
+      "trigger": "monitor",
+      "date": "2026-04-03T01:16:54.580Z"
     }
   ]
 }
