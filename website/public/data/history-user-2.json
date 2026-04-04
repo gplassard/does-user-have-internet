@@ -7181,6 +7181,12 @@
       "state": "Alert",
       "trigger": "monitor",
       "date": "2026-04-04T09:17:50.192Z"
+    },
+    {
+      "trigger": "monitor",
+      "date": "2026-04-04T09:26:52.935Z",
+      "since": "2026-04-04T09:26:35+00:00",
+      "state": "OK"
     }
   ]
 }
