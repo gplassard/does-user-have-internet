@@ -7043,6 +7043,12 @@
       "since": "2025-02-17T15:24:04+00:00",
       "state": "Alert",
       "trigger": "scheduled"
+    },
+    {
+      "since": "2025-02-17T15:24:04+00:00",
+      "state": "Alert",
+      "trigger": "scheduled",
+      "date": "2026-04-19T00:30:52.436Z"
     }
   ]
 }
