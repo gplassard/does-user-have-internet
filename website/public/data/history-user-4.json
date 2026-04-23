@@ -7253,6 +7253,12 @@
       "since": "2026-03-13T01:43:02+00:00",
       "state": "OK",
       "trigger": "scheduled"
+    },
+    {
+      "trigger": "scheduled",
+      "date": "2026-04-23T00:30:53.230Z",
+      "since": "2026-03-13T01:43:02+00:00",
+      "state": "OK"
     }
   ]
 }
