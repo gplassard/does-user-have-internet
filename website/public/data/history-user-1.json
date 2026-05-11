@@ -7175,6 +7175,12 @@
       "since": "2025-02-17T15:24:04+00:00",
       "state": "Alert",
       "trigger": "scheduled"
+    },
+    {
+      "state": "Alert",
+      "trigger": "scheduled",
+      "date": "2026-05-11T00:30:53.742Z",
+      "since": "2025-02-17T15:24:04+00:00"
     }
   ]
 }
