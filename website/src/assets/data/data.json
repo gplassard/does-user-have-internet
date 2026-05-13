@@ -1,5 +1,5 @@
 {
-  "lastUpdatedAt": "2026-05-12T06:53:18.458Z",
+  "lastUpdatedAt": "2026-05-13T00:30:52.638Z",
   "users": {
     "user-1": {
       "state": "Alert",
@@ -18,5 +18,5 @@
       "since": "2026-05-12T06:53:02+00:00"
     }
   },
-  "trigger": "monitor"
+  "trigger": "scheduled"
 }
